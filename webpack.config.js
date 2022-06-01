@@ -1,21 +1,24 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
   plugins: [
     new HtmlWebpackPlugin({
+      title: 'To Do List',
       template: './src/index.html',
     }),
   ],
-  devServer: {
-    static: './dist',
-    hot: true,
-  },
-  mode: 'development',
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, './dist'),
+    filename: '[name].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   module: {
@@ -24,9 +27,14 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
     ],
-  },
-  optimization: {
-    runtimeChunk: 'single',
   },
 };
