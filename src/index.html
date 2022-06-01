@@ -7,20 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-  <main>
-    <div class="wrapper">
-        <div class="refresh">
-            <div class="title"><h3>Today's To Do</h3></div>
-            <i class="fa-solid fa-rotate"></i>
-        </div>
-        <form class="task-input">
-            <input type="text"  class = "input1" placeholder="Add to your list...">
-            <input type="submit" value = ''>
+    <main><div class="listContainer">
+        <div class="title"><h3>Today's To Do</h3><img class = 'imgRefresh' alt = 'refresh'></div>
+        <form class = "addTask">
+          <input type="text" class="p1" placeholder="Add to your list...">
+          <input type="submit" value = '' class = "submit"><img class = 'imgSubmit' alt = 'return'>
         </form>
-        <ul class="todo-list">
-        </ul>
+        <ul class="to-do-list"></ul>
         <div class="clear">Clear all completed</div>
-    </div>
-   </main>
+      </div></main>
 </body>
 </html>
