@@ -21,6 +21,10 @@ main {
   box-sizing: border-box;
 }
 
+.p1 {
+  font-size: 20px;
+}
+
 .addTask {
   height: 50px;
   width: 100%;
