@@ -26,7 +26,8 @@ const appendTask = (item, list) => {
           e.target.style.color = 'black';
           taskUI.children[0].children[1].setAttribute('contenteditable', 'false');
           moveImg.src = moveSrc;
-          taskUI (() => {
+
+          taskUI(() => {
             localStorage.setItem('moveImg', JSON.stringify(moveSrc));
           }, [moveSrc]);
 
