@@ -1,0 +1,85 @@
+body {
+  background-color: rgb(255, 254, 253);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.listContainer {
+  margin-top: 100px;
+  width: 70%;
+  box-shadow: 0 0 2px 2px black;
+}
+
+.p1 {
+  width: 100%;
+}
+
+.title {
+  height: 50px;
+  margin: 0;
+  border-bottom: 1px solid rgb(187, 183, 183);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.addTask {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid rgb(194, 191, 191);
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addTask > input {
+  border: none;
+}
+
+.submit {
+  background-color: inherit;
+}
+
+.to-do-list {
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+.to-do-list > * {
+  list-style: none;
+  height: 50px;
+  border-bottom: 1px solid rgb(199, 196, 196);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.check {
+  margin-right: 10px;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  background: inherit;
+}
+
+.clear {
+  background-color: rgba(224, 217, 217, 0.534);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(116, 113, 111);
+}
