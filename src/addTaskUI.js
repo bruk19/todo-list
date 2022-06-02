@@ -17,7 +17,7 @@ const appendTask = (item, list) => {
       moveImg.parentNode.style.background = 'rgba(214, 214, 148, 0.534)';
       taskUI.children[0].children[1].setAttribute('contenteditable', 'true');
       endCont.style.fontSize = '24px';
-      endCont.style.color = 'rgba(226, 17, 17, 0.534)';
+      endCont.style.color = 'rgba(243, 9, 9, 0.534)';
       endCont.addEventListener('click', (e) => {
         if (moveImg.src === trashSrc) {
           e.target.textContent = 'Clear all completed';
