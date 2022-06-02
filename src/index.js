@@ -19,7 +19,7 @@ class Task {
   }
 }
 
-const list = [new Task('Finsh the project', false, 0), new Task('Wash the dishes', false, 1)];
+const list = [];
 
 const appendTask = (item) => {
   const taskUI = document.createElement('li');
