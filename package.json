@@ -2,7 +2,7 @@
   "name": "todo-list",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
@@ -20,9 +20,6 @@
     "url": "https://github.com/bruk19/todo-list/issues"
   },
   "homepage": "https://github.com/bruk19/todo-list#readme",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
@@ -40,5 +37,8 @@
     "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }

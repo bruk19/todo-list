@@ -17,4 +17,3 @@ const clearTask = (index, list) => {
     }
   };
   
-  export default clearTask;
