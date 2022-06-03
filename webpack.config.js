@@ -7,7 +7,7 @@ module.exports = {
     index: './src/index.js',
     add: './src/add.js',
     remove: './src/remove.js',
-    addTask: './src/addTaskUI.js',
+    addTaskUI: './src/addTaskUI.js',
     tasks: './src/tasks.js',
   },
   devtool: 'inline-source-map',
@@ -16,7 +16,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Todo List',
+      title: 'To Do List',
       template: './src/index.html',
     }),
   ],
@@ -41,4 +41,5 @@ module.exports = {
       },
     ],
   },
+
 };

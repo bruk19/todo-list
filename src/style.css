@@ -9,31 +9,34 @@ main {
   box-shadow: 0 0 2px 2px rgb(139, 138, 138);
 }
 
+.title h3 {
+  font-size: 23px;
+}
+
 .title {
   height: 50px;
   margin: 0;
-  font-size: 20px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(202, 198, 198);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px;
   box-sizing: border-box;
-}
-
-.p1 {
-  font-size: 20px;
 }
 
 .addTask {
   height: 50px;
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(206, 201, 201);
   padding: 0 10px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.p1 {
+  font-size: 20px;
 }
 
 .addTask > input {
@@ -56,7 +59,7 @@ main {
 .to-do-list > * {
   list-style: none;
   height: 50px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(196, 194, 194);
   width: 100%;
   display: flex;
   align-items: center;
@@ -80,7 +83,7 @@ main {
 }
 
 .check {
-  margin-right: 11px;
+  margin-right: 10px;
 }
 
 img {
@@ -91,11 +94,11 @@ img {
 }
 
 .clear {
-  background-color: rgba(228, 218, 218, 0.534);
+  background-color: rgba(224, 219, 219, 0.534);
   height: 50px;
-  color: rgb(113, 116, 116);
+  font-size: 20px;
+  color: rgb(95, 94, 94);
   display: flex;
-  font-size: 23px;
   align-items: center;
   justify-content: center;
   cursor: pointer;

@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://loquacious-froyo-412ce8.netlify.app)
+[Live Demo Link](https://sprightly-rabanadas-50dedd.netlify.app)
 
 
 # Getting Started
