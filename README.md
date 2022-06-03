@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://cheery-cheesecake-0a5e7c.netlify.app/)
+[Live Demo Link](https://loquacious-froyo-412ce8.netlify.app)
 
 
 # Getting Started

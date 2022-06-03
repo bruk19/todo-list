@@ -27,6 +27,21 @@ const appendTask = (item, list) => {
           taskUI.children[0].children[1].setAttribute('contenteditable', 'false');
           moveImg.src = moveSrc;
           moveImg.parentNode.style.background = 'inherit';
+      endCont.style.fontSize = '25px';
+      endCont.style.color = 'rgba(243, 9, 9, 0.534)';
+      endCont.addEventListener('click', (e) => {
+        if (moveImg.src === trashSrc) {
+          e.target.textContent = 'Clear all completed';
+          e.target.style.background = 'rgba(168, 157, 157, 0.534)';
+          e.target.style.fontSize = '16px';
+          e.target.style.color = 'black';
+          taskUI.children[0].children[1].setAttribute('contenteditable', 'false');
+          moveImg.src = moveSrc;
+
+          taskUI(() => {
+            localStorage.setItem('moveImg', JSON.stringify(moveSrc));
+          }, [moveSrc]);
+
           list.forEach((element) => {
             if (element.index === item.index) {
               element.description = taskUI.children[0].children[1].textContent;
